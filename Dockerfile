@@ -1,6 +1,8 @@
 # Base image: use Ubuntu as a base
 FROM ubuntu:20.04
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     sudo \
